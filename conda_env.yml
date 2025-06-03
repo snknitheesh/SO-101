@@ -1,0 +1,12 @@
+name: lerobot
+channels:
+  - conda-forge
+  - defaults
+  - pytorch
+dependencies:
+  - python=3.12
+  - numpy
+  - pip
+  - pip:
+      - transformers
+      - opencv-python
