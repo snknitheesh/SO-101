@@ -1,0 +1,16 @@
+# Build and installation directories
+build/
+install/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Editor settings
+.vscode/
+.idea/
+
+# Misc
+.DS_Store
+
