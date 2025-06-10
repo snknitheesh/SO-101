@@ -1,6 +1,5 @@
-FROM rwthika/ros2-ml@sha256:1c24b67c934aeb6dff7d7eb7a81fa5a438bf3e5ec4f1433f065b644d75c190f5 AS builder-base
+FROM rwthika/ros2-ml:latest AS builder-base
 
-# S
 ENV ROS_DISTRO=humble
 ARG CR_PAT
 ARG DEBIAN_FRONTEND=noninteractive
