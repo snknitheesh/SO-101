@@ -2,9 +2,13 @@ from mani_skill.agents.base_agent import BaseAgent
 from mani_skill.agents.controllers import *
 from mani_skill.agents.registration import register_agent
 import os
+import sapien
+from mani_skill.utils import sapien_utils, common
+from mani_skill.envs.sapien_env import BaseEnv
+from mani_skill.utils.registration import register_env
 
 @register_agent()
-class Mykr1( BaseAgent):
+class so101agent(BaseAgent):
 
     uid = "so101agent"
     home_path = os.environ["HOME"]
@@ -65,3 +69,12 @@ class Mykr1( BaseAgent):
         "Wrist_Roll":  0.0,
         "Jaw":         0.0
     }
+    
+    
+    @property
+    def tcp(self):
+        # Find the link named "jaw" in the robot's links
+        for link in self.robot.get_links():
+            if link.name == "jaw":
+                return link
+        raise RuntimeError("TCP link 'jaw' not found in robot links")
