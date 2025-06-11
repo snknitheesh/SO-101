@@ -12,6 +12,8 @@ model = PPO.load("so101_push_cube_ppo")
 obs, _ = env.reset()
 while True:
     action, _ = model.predict(obs, deterministic=True)
+    # action = env.action_space.sample()
+    print(action)
     obs, reward, terminated, truncated, info = env.step(action)
     env.render()
     if terminated or truncated:
