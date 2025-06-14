@@ -41,3 +41,5 @@ ros2 launch so101_moveit_config move_group.launch.py
 ```bash
 ros2 topic echo /joint_states
 ```
+
+

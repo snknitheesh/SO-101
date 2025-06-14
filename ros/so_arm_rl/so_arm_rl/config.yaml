@@ -1,0 +1,6 @@
+LiftCube-v0:
+  n_timesteps: 5000
+  policy: 'MultiInputPolicy'
+  frame_stack: 1
+  use_sde: True
+  buffer_size: 100000
