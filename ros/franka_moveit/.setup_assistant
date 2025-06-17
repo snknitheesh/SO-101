@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: franka_moveit
+    relative_path: urdf/fr3_franka_hand.urdf
+  srdf:
+    relative_path: config/fr3_franka_hand.srdf
+  package_settings:
+    author_name: zozo
+    author_email: snknitheesh@gmail.com
+    generated_timestamp: 1750157719
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
