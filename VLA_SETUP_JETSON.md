@@ -83,3 +83,15 @@ pip install -e .[all]
 For issues and questions:
 - **LeRobot**: [GitHub Issues](https://github.com/huggingface/lerobot/issues)
 - **Isaac-GR00T**: [GitHub Issues](https://github.com/NVlabs/Isaac-GR00T/issues)
+
+
+Dependency Issues:
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+gr00t 1.1.0 requires av==12.3.0, but you have av 14.4.0 which is incompatible.
+gr00t 1.1.0 requires gymnasium==1.0.0, but you have gymnasium 0.29.1 which is incompatible.
+gr00t 1.1.0 requires numpy<2.0.0,>=1.23.5, but you have numpy 2.2.6 which is incompatible.
+gr00t 1.1.0 requires pyarrow==14.0.1, but you have pyarrow 20.0.0 which is incompatible.
+pettingzoo 1.25.0 requires gymnasium>=1.0.0, but you have gymnasium 0.29.1 which is incompatible.
+tensorflow-cpu-aws 2.15.0 requires numpy<2.0.0,>=1.23.5, but you have numpy 2.2.6 which is incompatible.
+
+"decord==0.6.0; platform_system != 'Darwin'",
