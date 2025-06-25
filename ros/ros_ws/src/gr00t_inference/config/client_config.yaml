@@ -1,0 +1,16 @@
+# GR00T Inference Client Configuration
+
+# Server Connection
+server_host: "localhost"  # IP/hostname of the inference server
+server_port: 5555  # Port of the inference server
+
+# Robot Configuration
+camera_topics: ["/camera/image_raw"]  # Camera topic(s) to subscribe to
+camera_names: ["ego_view"]  # Corresponding camera names for GR00T
+joint_state_topic: "/joint_states"  # Joint state topic
+language_instruction_topic: "/language_instruction"  # Language instruction topic
+action_topic: "/robot_action"  # Topic to publish actions
+
+# Control Parameters
+action_horizon: 8  # Number of actions to execute from each chunk
+control_frequency: 50.0  # Control frequency in Hz

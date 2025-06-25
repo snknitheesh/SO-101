@@ -1,0 +1,11 @@
+# GR00T Inference Server Configuration
+
+# Model Configuration
+model_path: "nvidia/GR00T-N1.5-3B"  # Path to your finetuned model
+embodiment_tag: "gr1"  # Embodiment tag for your robot
+data_config: "fourier_gr1_arms_only"  # Data configuration
+denoising_steps: 4  # Number of denoising steps
+device: "cuda"  # Device for inference (cuda/cpu)
+
+# Server Configuration
+server_port: 5555  # ZMQ server port
